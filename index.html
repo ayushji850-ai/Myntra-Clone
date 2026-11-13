@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODEST | Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MODEST<span>.</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#products">Collections</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <input type="text" id="search" placeholder="Search fashion...">
+                <button onclick="showCart()">Bag <span id="cart-count">0</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">NEW SEASON / 2026</p>
+            <h1>STYLE IS<br>YOUR <span>IDENTITY.</span></h1>
+            <p>Discover fashion that speaks before you do.</p>
+            <a href="#products" class="shop-btn">Explore Collection →</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=900"
+                 alt="Fashion model">
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="section-heading">
+            <p>EXPLORE YOUR STYLE</p>
+            <h2>Shop By Category</h2>
+        </div>
+
+        <div class="category-grid">
+            <div class="category-card" id="men">
+                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=600" alt="Men fashion">
+                <h3>MEN'S WEAR</h3>
+                <a href="#products">Explore →</a>
+            </div>
+
+            <div class="category-card" id="women">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Women fashion">
+                <h3>WOMEN'S WEAR</h3>
+                <a href="#products">Explore →</a>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Footwear">
+                <h3>FOOTWEAR</h3>
+                <a href="#products">Explore →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="section-heading">
+            <p>HANDPICKED FOR YOU</p>
+            <h2>Trending Products</h2>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterProducts('All')">All</button>
+            <button onclick="filterProducts('Men')">Men</button>
+            <button onclick="filterProducts('Women')">Women</button>
+            <button onclick="filterProducts('Shoes')">Shoes</button>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offer">
+        <div>
+            <p>THE BIG STYLE EVENT</p>
+            <h2>UP TO 50% OFF</h2>
+            <p>Upgrade your wardrobe. Upgrade your confidence.</p>
+            <a href="#products">Shop Now →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-logo">MODEST.</div>
+        <p>Fashion is temporary. Style is forever.</p>
+        <p>© 2026 MODEST. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
